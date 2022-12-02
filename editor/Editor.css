@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://themes.googleusercontent.com/fonts/css?kit=ODelI1aHBYDBqgeIAH2zlJpCfVcp84aqLawScqpMaD9usNh9OUp8QYAKK8_8rit_CSMubOrbMU8fLrnbUYUadDItWdJF12eV5_IDTV-8enA");
+@import url("https://themes.googleusercontent.com/fonts/css?kit=x36Tj9cpS-M9VfgRj0yA_skM0_UbvTORk8XH934V0lfp3U2aGjo-NRBIHtrSC9cSgmKqFASrP2XauyrtHJV9_A");
+@import url("https://themes.googleusercontent.com/fonts/css?kit=xqMAg7xuzLSp7hp7Tiq3bGM9NDhzwBCyFuWDM2D15Uz9WZHOgVckaTy6Jfc9zZwY");
+@import url("https://themes.googleusercontent.com/fonts/css?kit=GGSdX60RftK6aXtKOXIPy1Wylps3BX-Sdlc5YJqKZD8TqG8ZfUrCwosbsO3BvOac96xlbbE5D7Gw2o7jubnkMA");
+@import url("https://themes.googleusercontent.com/fonts/css?kit=3qINvnjb346LubKDfLRn69t6G6Z1RrRfgULZ1AHo7mPOfsfM6rvuuu7h1pY3r_-A");
+
+
+.liness {
+  height: 10px;
+  width: 50px;
+  border: 1px dashed rgb(170, 166, 166);
+  /* border:1px dotted rgb(170, 166, 166); */
+}
+
+img {
+  width: 60%;
+}
+
+.line {
+  margin: 0px 10px 5px 10px;
+  display: inline;
+  height: 20px;
+  border-left: 1px solid rgb(197, 195, 195);
+}
+
+.toolbarText {
+  padding: 0 5px 0 5px;
+  font-size: small;
+  margin-bottom: 4px;
+}
+option {
+  font-size: 15px;
+  background-color: white;
+}
+
+.head1 {
+  font-size: 28px;
+}
+.head2 {
+  font-size: 26px;
+}
+.head3 {
+  font-size: 22px;
+}
+.head4 {
+  font-size: 20px;
+}
+.normalText {
+  font-size: 15px;
+}
+.dropdown {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  line-height: 0%;
+  outline: 0px solid transparent;
+  border: 0px;
+  height: 30px;
+  width: 80px;
+}
+
+.options label,
+.options select {
+  font-family: "Poppins", sans-serif;
+}
+/* scrollbar design */
+
+/* .scrollbarDesign::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #f5f5f5;
+} */
+
+.scrollbarDesign::-webkit-scrollbar {
+  width: 10px;
+  background-color: #f5f5f5;
+}
+
+.scrollbarDesign::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #c7c6c6;
+}
+
+
+
+.editor-wrapper {
+  margin: 0 auto;
+  /* height: 100%; */
+  /* height: 600px; */
+
+  display: flex;
+  justify-content: center;
+  background-color: #f8f9fa;
+  /* background-color: rgb(245, 241, 241); */
+  border: 1px solid #ccc;
+}
+
+.edit-controls {
+  padding: 5px 0px 5px 25px;
+  background-color: white;
+  border-top: grey;
+  border-bottom: grey;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.content-pane {
+  margin-top: 15px;
+  /* width: 21cm;
+  height: 29.7cm; */
+}
+
+#toc {
+  font-size: small;
+}
+#toc:hover {
+  border: 1px dashed grey;
+}
+
+.page {
+  font-family: Helvetica;
+  font-size: 18px;
+  margin-bottom: 10px;
+  outline: 0px solid transparent;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(109, 109, 109, 0.2),
+    0 3px 10px 0 rgba(117, 116, 116, 0.19);
+  padding: 50px;
+  width: 816px;
+  /* width: 21cm; */
+  /* height: 29.7cm; */
+  min-height: 90%;
+  height: auto;
+}
+
+.editorDropdown:hover,
+.input-btn:hover,
+.editorBtn:hover {
+  background-color: lightgrey;
+  cursor: pointer;
+}
+
+.editorInputHidden{
+  display: none;
+}
+
+
+.input-btn {
+  padding: 3px;
+  margin-top: 10px;
+  border-radius: 2px;
+  height: 24px;
+  color: rgb(85, 83, 83);
+  box-sizing: content-box;
+}
+
+.editorBtn {
+  padding: 3px;
+  margin-top: 10px;
+  border-radius: 2px;
+  color: rgb(85, 83, 83);
+  box-sizing: content-box;
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  .pageBreak * {
+    visibility: hidden;
+  }
+  #page * {
+    visibility: visible;
+    /* background-attachment: fixed; */
+    -webkit-print-color-adjust: exact;
+  }
+  #page {
+    /* position: absolute; */
+    left: 0;
+    top: 0;
+  }
+}
+
+/* @media print {
+  .pageBreak {
+    page-break-after: always;
+  }
+  .pageBreak {
+    visibility: hidden;
+  }
+} */
+
+/* @media print {
+  body * {
+    visibility: hidden;
+  }
+  .pageBreak { page-break-after: always; }
+  .pageBreak {
+    visibility: hidden;
+  }
+  #page * {
+    visibility: visible;
+    background-attachment: fixed; 
+  }
+  #page {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+} */
